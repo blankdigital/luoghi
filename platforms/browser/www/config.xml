@@ -2,11 +2,12 @@
 <widget id="it.iluoghidellarete.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>I Luoghi della Rete</name>
     <description>
-        A blank PhoneGap app.
+        Il mio modo di essere connesso.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="info@blankwebagency.com" href="https://blankwebagency.com">
+        _blank | Digital Creative Agency
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <icon src="www/res/icon/icon.png" />
 </widget>
