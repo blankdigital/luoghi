@@ -19,6 +19,11 @@
 		<allow-intent href="*://*politicheantidroga.gov.it/*" />
 
      <icon src="www/res/icon/icon.png" />
+  
+  	 <plugin name="cordova-plugin-statusbar"  />
+  	 <plugin name="cordova-plugin-inappbrowser"  />
+
+    
   	 <platform name="android" >
 		  <allow-intent href="market:*" />
       <icon src="www/res/icon/android/drawable-ldpi-icon.png" density="ldpi" />
