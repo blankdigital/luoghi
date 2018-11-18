@@ -307,7 +307,8 @@ html.with-statusbar-overlay body {
 .navbar,
 .toolbar,
 .subnavbar {
-    background: #2196f3;
+    background-color: #2196f3;
+    background: url("../img/ldr_bg.jpg") repeat-y left top;
 }
 
     .navbar a.link,
@@ -1069,7 +1070,7 @@ i.icon {
 }
 /* === Content Block === */
 .content-block {
-    margin: 32px 0;
+    margin: 65px 0;
     padding: 0 16px;
     box-sizing: border-box;
 }
@@ -1694,3 +1695,32 @@ body.panel-closing .views {
     [disabled] [disabled] {
         opacity: 1;
     }
+
+/* === Modifiche === */
+img {max-width:100%;}
+
+.centra {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.fixed {position:fixed;}
+
+.toolbar-inner a.link {padding: 0 30px;}
+
+.lista a {
+    background: url("../img/ldr_bg.jpg") repeat-y left top;
+    font-weight: 700;
+    color: #fff;
+    display: block;
+    padding: 20px;
+    margin: 8px 25px;
+    border-radius: 5px;
+}
+.lista a:hover {
+    background: rgb(33, 150, 243);
+ }
+
+.imghome {
+    margin:50px auto 20px;
+}

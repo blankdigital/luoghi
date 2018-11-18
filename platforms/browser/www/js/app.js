@@ -1,8 +1,4 @@
-$(document).bind("mobileinit", function () {
-    $.mobile.pushStateEnabled = true;
-});
- 
-$(function () {
+(function () {
     var menuStatus;
     var show = function() {
         if(menuStatus) {

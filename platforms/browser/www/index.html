@@ -13,16 +13,16 @@
     <title>I Luoghi della Rete</title>
 
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+
 </head>
 <body>
     <!-- Status bar overlay -->
     <div class="statusbar-overlay"></div>
 
     <!-- Panels overlay-->
-    <div class="panel-overlay" id="menu"></div>
+    <div class="panel-overlay"></div>
     <!-- Left panel with reveal effect-->
-    <div class="panel panel-left panel-reveal">
+    <div class="panel panel-left panel-reveal" id="menu">
         <div class="content-block">
             <h3>MENU</h3>
             <ul>
@@ -44,13 +44,13 @@
             <div class="navbar">
                 <div class="navbar-inner">
                     <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
-                    <div class="center sliding">I Luoghi della Rete</div>
+                    <div class="centra sliding">I Luoghi della Rete</div>
                     <div class="right">
                         <!--
-                        Right link contains only icon - additional "icon-only" class
-                        Additional "open-panel" class tells app to open panel when we click on this link
+    Right link contains only icon - additional "icon-only" class
+    Additional "open-panel" class tells app to open panel when we click on this link
 
-                                          <a href="#" class="showMenu"><i class="icon icon-bars"></i></a>-->
+                        <a href="#" class="showMenu"><i class="icon icon-bars"></i></a>-->
                     </div>
                 </div>
             </div>
@@ -59,11 +59,13 @@
                 <!-- Page, "data-page" contains page name -->
                 <div data-page="index" class="page" data-role="content">
                     <!-- Scrollable page content -->
-                    <div class="page-content">
-                        <div class="content-block">
-                            <p>Page content goes here</p>
-                            <!-- Link to another page -->
-                            <a href="about.html">About app</a>
+                    <div class="page-content" id="pageContent">
+                        <div class="content-block lista">
+                            <p><img src="img/logo_ldr.png" class="centra imghome" /></p>
+                            <a href="progetto.html" class="link">Il Progetto</a>
+                            <a href="#" class="link" onclick="openUrl('https://www.iluoghidellarete.it/index.php/survey', '_system', 'location=yes'); return false;">Fai il nostro Test!</a>
+                            <a href="#" class="link" onclick="openUrl('https://wa.me/390815391756', '_system', 'location=yes'); return false;">SOS</a>
+                            <a href="contatti.html" class="link">Contattaci</a>
                         </div>
                     </div>
                 </div>
@@ -81,6 +83,7 @@
     </div>
 
     <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript">
         function openUrl(url) {
             window.open(url, '_blank', 'location=yes');
@@ -95,6 +98,5 @@
             document.addEventListener("deviceready", onDeviceReady, true);
         });
     </script>
-
-</body>
+ </body>
 </html>

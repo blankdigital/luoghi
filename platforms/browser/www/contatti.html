@@ -37,20 +37,24 @@
     </div>
 
     <!-- Views -->
-    <div class="views pages" data-role="page" id="home">
+    <div class="views pages" data-role="page" id="contatti">
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
             <!-- Top Navbar-->
             <div class="navbar">
                 <div class="navbar-inner">
-                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                    <div class="left fixed">
+                        <a href="index.html" class="back link">
+                            <i class="icon icon-back"></i>
+                        </a>
+                    </div>
                     <div class="centra sliding">I Luoghi della Rete</div>
                     <div class="right">
                         <!--
-    Right link contains only icon - additional "icon-only" class
-    Additional "open-panel" class tells app to open panel when we click on this link
+        Right link contains only icon - additional "icon-only" class
+        Additional "open-panel" class tells app to open panel when we click on this link
 
-                        <a href="#" class="showMenu"><i class="icon icon-bars"></i></a>-->
+                            <a href="#" class="showMenu"><i class="icon icon-bars"></i></a>-->
                     </div>
                 </div>
             </div>
@@ -60,12 +64,47 @@
                 <div data-page="index" class="page" data-role="content">
                     <!-- Scrollable page content -->
                     <div class="page-content" id="pageContent">
-                        <div class="content-block lista">
-                            <p><img src="img/logo_ldr.png" class="centra imghome" /></p>
-                            <a href="progetto.html" class="link">Il Progetto</a>
-                            <a href="#" class="link" onclick="openUrl('https://www.iluoghidellarete.it/index.php/survey', '_system', 'location=yes'); return false;">Fai il nostro Test!</a>
-                            <a href="#" class="link" onclick="openUrl('https://wa.me/390815391756', '_system', 'location=yes'); return false;">SOS</a>
-                            <a href="contatti.html" class="link">Contattaci</a>
+                        <div class="content-block">
+                            <p><img class="centra" src="img/logo_ldr.png" alt=" "></p>
+                        </div>
+                        <div class="content-block">
+                            <h1>Enti promotori:</h1>
+                            <p><img class="centra" src="img/logo-fanelli.png" alt=" "></p>
+                            <h2>Maria Fanelli</h2>
+                            <h3>Associazione Comunità Terapeutica</h3>
+                            <p>L’Associazione non ha scopo di lucro e persegue finalità di solidarietà sociale in tutte le situazioni di disagio ed in particolare nei soggetti portatori di dipendenze patologiche e di disagio fisico e psichico, promuovendo azioni di prevenzione, percorsi di cura e riabilitazione.</p>
+                            <h4>Indirizzi</h4>
+                            <p>Centro Dipendenze Patologiche:<p>
+                            <p>Via A. De Gasperi, 323 - 80053 C/mare di Stabia (NA)</p>
+                            <p>Comunità Residenziale:</p>
+                            <p>Via Gesinella, 18 - 80050 Pimonte (NA)</p>
+                            <h4>Recapiti Telefonici</h4>
+                            <p>Centro</p>
+                            <p>Tel. <a href="tel:+390815391756">0815391756</a></p>
+                            <p>Fax <a href="tel:+390818715860">0818715860</a></p>
+                            <p>Cell. <a href="tel:+393316785304">3316785304</a></p>
+                            <p>Comunità</p>
+                            <p>Tel. & Fax <a href="tel:+390818749228">0818749228</a></p>
+                            <p>Cell. <a href="tel:+393316748956">3316748956</a></p>
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@mariafanelli.it">info@mariafanelli.it</a></p>
+                        </div>
+                        <div class="content-block">
+                            <p><img class="centra" src="img/logo-primavera.png" alt=" "></p>
+                            <h2>Primavera</h2>
+                            <h3>Piccola Soc. Coop. Sociale ONLUS</h3>
+                            <p>Cooperativa finalizzata alla riabilitazione e all’inserimento socio-lavorativo di persone svantaggiate.</p>
+                            <h4>Indirizzo</h4>
+                            <p>Via A. De Gasperi, 323 - 80053 C/mare di Stabia (NA)</p>
+                            <h4>Recapiti Telefonici</h4>
+                            <p>Tel. <a href="tel:+390815391756">0815391756</a></p>
+                            <p>Fax <a href="tel:+390818715860">0818715860</a></p>
+                            <p>Cell. <a href="tel:+393316785304">3316785304</a></p>
+                            <h4>Email</h4>
+                            <p><a href="mailto:primaveracooperativa@virgilio.it">primaveracooperativa@virgilio.it </a></p>
+                        </div>
+                        <div class="content-block">
+                            <p><a href="http://www.politicheantidroga.gov.it/"><img class="centra" src="img/dipartimento-antidroga.png" alt=" "></a></p>
                         </div>
                     </div>
                 </div>
@@ -74,7 +113,7 @@
             <div class="toolbar">
                 <div class="toolbar-inner">
                     <!-- Toolbar links -->
-                    <a href="#" class="link">Home</a>
+                    <a href="index.html" class="link">Home</a>
                     <a href="#" class="link" onclick="openUrl('https://www.iluoghidellarete.it/index.php/survey', '_system', 'location=yes'); return false;">Test</a>
                     <a href="#" class="link" onclick="openUrl('https://wa.me/390815391756', '_system', 'location=yes'); return false;">SOS</a>
                 </div>
@@ -98,5 +137,6 @@
             document.addEventListener("deviceready", onDeviceReady, true);
         });
     </script>
- </body>
+
+</body>
 </html>
