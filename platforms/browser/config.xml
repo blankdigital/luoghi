@@ -17,5 +17,7 @@
     <allow-intent href="geo:*" />
     <allow-intent href="*://*.iluoghidellarete.it/*" />
     <allow-intent href="*://*politicheantidroga.gov.it/*" />
+    <allow-intent href="whatsapp:*" />
+    <access launch-external="yes" origin="whatsapp:*" />
     <icon src="www/res/icon/icon.png" />
 </widget>

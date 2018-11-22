@@ -307,8 +307,7 @@ html.with-statusbar-overlay body {
 .navbar,
 .toolbar,
 .subnavbar {
-    background-color: #2196f3;
-    background: url("../img/ldr_bg.jpg") repeat-y left top;
+    background-color: #6699CC;
 }
 
     .navbar a.link,
@@ -1706,21 +1705,89 @@ img {max-width:100%;}
 }
 .fixed {position:fixed;}
 
-.toolbar-inner a.link {padding: 0 30px;}
+.lista {
+    display: flex;
+    width: 90vw;
+}
 
 .lista a {
-    background: url("../img/ldr_bg.jpg") repeat-y left top;
     font-weight: 700;
     color: #fff;
     display: block;
     padding: 20px;
-    margin: 8px 25px;
+    text-align:center;
+    width: 45%;
+    margin: 5px 8px;
     border-radius: 5px;
+    position: relative;
 }
+
+.lista a:before {
+    content:"";
+    display: block;
+    padding-top: 100%;
+}
+
 .lista a:hover {
-    background: rgb(33, 150, 243);
+    background: url("../img/ldr_bg.jpg") repeat-y left top;
  }
 
-.imghome {
-    margin:50px auto 20px;
+.lista a .contenuto {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right:0;
+    left:0;
+ }
+
+.lista a .contenuto div {
+    position:relative;
+    top:45%;
+    display:flex;
+    flex-direction: column;
 }
+    .lista a .contenuto i {
+        vertical-align: top;
+        position: absolute;
+        left: 50%; top: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: -15%;
+    }
+
+    .lista a .contenuto span {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.3em;
+        width: 90%;
+    }
+
+.tasto1 {background-color: #925899;}
+.tasto2 {background-color: #66A2CC;}
+.tasto3 {background-color: #DBA55D;margin-top:10px;}
+.tasto4 {background-color: #D4706F;}
+
+.imghome {
+    margin: 100px auto 20px;
+    max-width: 40%;
+}
+
+.toolbar-inner a.link {padding: 0 30px;}
+
+    .toolbar-inner i {
+        vertical-align: top;
+        display: inline-block;
+        position: absolute;
+        text-align: center;
+        margin-top: -5%;
+        font-size: 1.4em;
+    }
+
+    .toolbar-inner a.link i + span {
+        vertical-align: middle;
+        top: 28%;
+        position: relative;
+        font-size: smaller;
+        margin-left: 0;
+    }

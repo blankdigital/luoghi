@@ -1,0 +1,21 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "it.iluoghidellarete.app"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "it.iluoghidellarete.app"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "it.iluoghidellarete.app"
+        }
+    },
+    "dependent_plugins": {}
+}

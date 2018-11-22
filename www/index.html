@@ -10,9 +10,10 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
 
-    <title>I Luoghi della Rete</title>
-
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/styles.css">
+
+    <title>I Luoghi della Rete</title>
 
 </head>
 <body>
@@ -47,10 +48,10 @@
                     <div class="centra sliding">I Luoghi della Rete</div>
                     <div class="right">
                         <!--
-                        Right link contains only icon - additional "icon-only" class
-                        Additional "open-panel" class tells app to open panel when we click on this link
+    Right link contains only icon - additional "icon-only" class
+    Additional "open-panel" class tells app to open panel when we click on this link
 
-                                            <a href="#" class="showMenu"><i class="icon icon-bars"></i></a>-->
+    <a href="#" class="link open-panel"><i class="icon icon-bars"></i></a>-->
                     </div>
                 </div>
             </div>
@@ -60,12 +61,14 @@
                 <div data-page="index" class="page" data-role="content">
                     <!-- Scrollable page content -->
                     <div class="page-content" id="pageContent">
-                        <div class="content-block lista">
-                            <p><img src="img/logo_ldr.png" class="centra imghome" /></p>
-                            <a href="progetto.html" class="link">Il Progetto</a>
-                            <a href="#" class="link" onclick="openUrl('https://www.iluoghidellarete.it/index.php/survey', '_system', 'location=yes'); return false;">Fai il nostro Test!</a>
-                            <a href="#" class="link" onclick="openUrl('https://wa.me/390815391756', '_system', 'location=yes'); return false;">SOS</a>
-                            <a href="contatti.html" class="link">Contattaci</a>
+                        <img src="img/logo_ldr.png" class="centra imghome" />
+                        <div class="lista centra">
+                            <a href="#" class="link tasto1" onclick="openUrl('https://www.iluoghidellarete.it/index.php/survey', '_system', 'location=yes'); return false;"><div class="contenuto"><i class="fa fa-gamepad fa-5x" aria-hidden="true"></i><span>Fai il Test!</span></div></a>
+                            <a href="progetto.html" class="link tasto2"><div class="contenuto"><i class="fa fa-globe fa-5x" aria-hidden="true"></i><span>Il Progetto</span></div></a>
+                        </div>
+                        <div class="lista centra">
+                            <a href="#" onclick="window.open('whatsapp://send?phone=390815391756&text=&source=&data=', '_system', 'location=yes');" class="link tasto3"><div class="contenuto"><i class="fa fa-life-ring fa-4x" aria-hidden="true"></i><span>SOS</span></div></a>
+                            <a href="contatti.html" class="link tasto4"><div class="contenuto"><i class="fa fa-envelope fa-4x" aria-hidden="true"></i><span>Contattaci</span></div></a>
                         </div>
                     </div>
                 </div>
@@ -74,9 +77,9 @@
             <div class="toolbar">
                 <div class="toolbar-inner">
                     <!-- Toolbar links -->
-                    <a href="#" class="link">Home</a>
-                    <a href="#" class="link" onclick="openUrl('https://www.iluoghidellarete.it/index.php/survey', '_system', 'location=yes'); return false;">Test</a>
-                    <a href="#" class="link" onclick="openUrl('https://wa.me/390815391756', '_system', 'location=yes'); return false;">SOS</a>
+                    <a href="index.html" class="link"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+                    <a href="#" class="link" onclick="openUrl('https://www.iluoghidellarete.it/index.php/survey', '_system', 'location=yes'); return false;"><i class="fa fa-gamepad" aria-hidden="true"></i><span>Test</span></a>
+                    <a href="#" class="link" onclick="window.open('whatsapp://send?phone=390815391756&text=&source=&data=', '_system', 'location=yes');"><i class="fa fa-life-ring" aria-hidden="true"></i><span>SOS</span></a>
                 </div>
             </div>
         </div>
@@ -84,7 +87,7 @@
 
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+    <!--<script type="text/javascript" src="js/app.js"></script>-->
     <script type="text/javascript">
         function openUrl(url) {
             window.open(url, '_blank', 'location=yes');
@@ -95,9 +98,7 @@
             ref.addEventListener('loadstop', function () { alert('stop: ' + event.url); });
             ref.addEventListener('exit', function () { alert(event.type); });
         }
-        (function () {
-            document.addEventListener("deviceready", onDeviceReady, true);
-        });
+        (function () {document.addEventListener("deviceready", onDeviceReady, true);});
     </script>
 </body>
 </html>

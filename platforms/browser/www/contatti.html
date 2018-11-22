@@ -12,13 +12,13 @@
 
     <title>I Luoghi della Rete</title>
 
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
 <body>
     <!-- Status bar overlay -->
     <div class="statusbar-overlay"></div>
-
     <!-- Panels overlay-->
     <div class="panel-overlay"></div>
     <!-- Left panel with reveal effect-->
@@ -51,10 +51,10 @@
                     <div class="centra sliding">I Luoghi della Rete</div>
                     <div class="right">
                         <!--
-        Right link contains only icon - additional "icon-only" class
-        Additional "open-panel" class tells app to open panel when we click on this link
+                        Right link contains only icon - additional "icon-only" class
+                        Additional "open-panel" class tells app to open panel when we click on this link
 
-                            <a href="#" class="showMenu"><i class="icon icon-bars"></i></a>-->
+                                            <a href="#" class="showMenu"><i class="icon icon-bars"></i></a>-->
                     </div>
                 </div>
             </div>
@@ -65,14 +65,18 @@
                     <!-- Scrollable page content -->
                     <div class="page-content" id="pageContent">
                         <div class="content-block">
-                            <p><img class="centra" src="img/logo_ldr.png" alt=" "></p>
+                            <p><img class="centra imghome" src="img/logo_ldr.png" alt=" "></p>
                         </div>
                         <div class="content-block">
                             <h1>Enti promotori:</h1>
                             <p><img class="centra" src="img/logo-fanelli.png" alt=" "></p>
                             <h2>Maria Fanelli</h2>
                             <h3>Associazione Comunità Terapeutica</h3>
-                            <p>L’Associazione non ha scopo di lucro e persegue finalità di solidarietà sociale in tutte le situazioni di disagio ed in particolare nei soggetti portatori di dipendenze patologiche e di disagio fisico e psichico, promuovendo azioni di prevenzione, percorsi di cura e riabilitazione.</p>
+                            <p>
+                                L’Associazione Maria Fanelli opera da circa trenta anni nel campo della prevenzione, della diagnosi e della cura delle addiction. Nel 1989 Ha
+                                attivato una Comunità residenziale per tossicodipendenti e un Centro per le Dipendenze Patologiche. L’Associazione ha implementato numerosi
+                                progetti e iniziative a livello locale, nazionale ed europeo, nell'ambito della ricerca, prevenzione e cura delle problematiche della dipendenza.
+                            </p>
                             <h4>Indirizzi</h4>
                             <p>Centro Dipendenze Patologiche:<p>
                             <p>Via A. De Gasperi, 323 - 80053 C/mare di Stabia (NA)</p>
@@ -93,7 +97,16 @@
                             <p><img class="centra" src="img/logo-primavera.png" alt=" "></p>
                             <h2>Primavera</h2>
                             <h3>Piccola Soc. Coop. Sociale ONLUS</h3>
-                            <p>Cooperativa finalizzata alla riabilitazione e all’inserimento socio-lavorativo di persone svantaggiate.</p>
+                            <p>
+                                La Cooperativa Primavera nasce nel 2000 da un progetto denominato “Primavera”
+                                finanziato dal FSE Horizon. Fin dalla sua costituzione si è occupata di prevenzione
+                                del disagio psichico e di riabilitazione delle dipendenze patologiche attraverso
+                                numerosi progetti e iniziative. Dal 2008 gestisce un servizio semiresidenziale per la
+                                diagnosi, cura e riabilitazione dei disturbi alimentari. Dal 2014 si occupa di
+                                riabilitazione psichiatrica presso i servizi di salute mentale dell’ASL Napoli 3 sud.
+                                Negli anni ha implementato numerose attività di reinserimento lavorativo di
+                                persone con problematiche di dipendenza patologica e disturbi psichiatrici.
+                            </p>
                             <h4>Indirizzo</h4>
                             <p>Via A. De Gasperi, 323 - 80053 C/mare di Stabia (NA)</p>
                             <h4>Recapiti Telefonici</h4>
@@ -113,16 +126,18 @@
             <div class="toolbar">
                 <div class="toolbar-inner">
                     <!-- Toolbar links -->
-                    <a href="index.html" class="link">Home</a>
-                    <a href="#" class="link" onclick="openUrl('https://www.iluoghidellarete.it/index.php/survey', '_system', 'location=yes'); return false;">Test</a>
-                    <a href="#" class="link" onclick="openUrl('https://wa.me/390815391756', '_system', 'location=yes'); return false;">SOS</a>
+                    <a href="index.html" class="link"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+                    <a href="#" class="link" onclick="openUrl('https://www.iluoghidellarete.it/index.php/survey', '_system', 'location=yes'); return false;"><i class="fa fa-gamepad" aria-hidden="true"></i><span>Test</span></a>
+                    <a href="#" class="link" onclick="window.open('whatsapp://send?phone=390815391756&text=&source=&data=', '_system', 'location=yes');"><i class="fa fa-life-ring" aria-hidden="true"></i><span>SOS</span></a>
                 </div>
             </div>
         </div>
     </div>
 
     <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <!--<script type="text/javascript" src="js/app.js"></script>-->
+
     <script type="text/javascript">
         function openUrl(url) {
             window.open(url, '_blank', 'location=yes');
