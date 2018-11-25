@@ -19,5 +19,6 @@
     <allow-intent href="*://*politicheantidroga.gov.it/*" />
     <allow-intent href="whatsapp:*" />
     <access launch-external="yes" origin="whatsapp:*" />
-    <icon src="www/res/icon/icon.png" />
+    <icon src="res/icon/icon.png" />
+    <preference name="SplashScreenDelay" value="10000" />
 </widget>

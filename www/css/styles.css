@@ -1704,7 +1704,7 @@ img {max-width:100%;}
     transform: translateX(-50%);
 }
 .fixed {position:fixed;}
-
+.altezza80 {max-height:80%}
 .lista {
     display: flex;
     width: 90vw;
