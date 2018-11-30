@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="it.iluoghidellarete.app" version="0.1.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="it.iluoghidellarete.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>I Luoghi della Rete</name>
     <description>
         Il mio modo di essere connesso.
@@ -19,6 +19,8 @@
 		<allow-intent href="*://*politicheantidroga.gov.it/*" />
     <allow-intent href="whatsapp:*" />
     <access origin="whatsapp:*" launch-external="yes" />
+    <allow-intent href="fb:*" />
+    <access origin="fb:*" launch-external="yes" />
 
   
   	 <plugin name="cordova-plugin-statusbar"  />
@@ -95,6 +97,6 @@
        <splash height="480" platform="ios" src="res/screen/ios/Default~iphone.png" width="320" />
 		 </platform>
      
-     <preference name="SplashScreenDelay" value="10000" />
+     <preference name="SplashScreenDelay" value="5000" />
 
 </widget>

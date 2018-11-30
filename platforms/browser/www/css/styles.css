@@ -307,7 +307,7 @@ html.with-statusbar-overlay body {
 .navbar,
 .toolbar,
 .subnavbar {
-    background-color: #6699CC;
+    background-color: #925899;
 }
 
     .navbar a.link,
@@ -1704,10 +1704,42 @@ img {max-width:100%;}
     transform: translateX(-50%);
 }
 .fixed {position:fixed;}
+.altezza60 {max-height:60%}
+
+#progetto .navbar,
+#progetto .toolbar,
+#progetto .subnavbar {background-color: #6699CC;}
+
+#partner .navbar,
+#partner .toolbar,
+#partner .subnavbar {background-color: #D4706F;}
+
+#header-home {
+    width: 100vw;
+    padding-bottom: 50px;
+    background-image: linear-gradient(to bottom right, #AB2473, #2F5093, #7B4B9F);
+}
+
+.imghome {
+    margin: 100px auto 20px;
+    max-width: 40%;
+}
+
+.sovrapposto {
+    margin-top: -50px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    width: 94%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 .lista {
     display: flex;
-    width: 90vw;
+    width: 90%;
 }
 
 .lista a {
@@ -1743,7 +1775,7 @@ img {max-width:100%;}
 .lista a .contenuto div {
     position:relative;
     top:45%;
-    display:flex;
+    display:block;
     flex-direction: column;
 }
     .lista a .contenuto i {
@@ -1765,13 +1797,9 @@ img {max-width:100%;}
 
 .tasto1 {background-color: #925899;}
 .tasto2 {background-color: #66A2CC;}
-.tasto3 {background-color: #DBA55D;}
+.tasto3 {background-color: #25d366;}
 .tasto4 {background-color: #D4706F;}
-
-.imghome {
-    margin: 100px auto 20px;
-    max-width: 40%;
-}
+.tasto5 {background-color: #4267b2;}
 
 .toolbar-inner a.link {padding: 0 30px;}
 

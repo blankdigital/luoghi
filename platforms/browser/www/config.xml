@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="it.iluoghidellarete.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="it.iluoghidellarete.app" version="0.1.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>I Luoghi della Rete</name>
     <description>
         Il mio modo di essere connesso.
@@ -19,6 +19,11 @@
     <allow-intent href="*://*politicheantidroga.gov.it/*" />
     <allow-intent href="whatsapp:*" />
     <access launch-external="yes" origin="whatsapp:*" />
+    <allow-intent href="fb:*" />
+    <access launch-external="yes" origin="fb:*" />
     <icon src="res/icon/icon.png" />
-    <preference name="SplashScreenDelay" value="10000" />
+    <preference name="android-minSdkVersion" value="16" />
+    <preference name="android-targetSdkVersion" value="26" />
+    <preference name="orientation" value="portrait" />
+    <preference name="SplashScreenDelay" value="5000" />
 </widget>
