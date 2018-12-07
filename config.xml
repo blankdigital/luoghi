@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="it.iluoghidellarete.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="it.iluoghidellarete.app" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>I Luoghi della Rete</name>
     <description>
         Il mio modo di essere connesso.
@@ -25,7 +25,7 @@
   
   	 <plugin name="cordova-plugin-statusbar"  />
   	 <plugin name="cordova-plugin-inappbrowser"  />
-     <!--<plugin name="cordova-plugin-splashscreen" />-->
+     <plugin name="cordova-plugin-splashscreen" />
      <preference name="android-minSdkVersion" value="16" />
      <preference name="android-targetSdkVersion"  value="26" />
      <preference name="orientation" value="portrait" />
@@ -33,7 +33,7 @@
 
   <icon src="res/icon/icon.png" />
 
-  <!--<platform name="android" >
+    <platform name="android" >
 		  <allow-intent href="market:*" />
       <icon src="res/icon/android/drawable-ldpi-icon.png" density="ldpi" />
       <icon src="res/icon/android/drawable-mdpi-icon.png" density="mdpi" />
@@ -54,7 +54,7 @@
        <splash density="port-xhdpi" src="res/screen/android/drawable-port-xhdpi-screen.png" />
        <splash density="port-xxhdpi" src="res/screen/android/drawable-port-xxhdpi-screen.png" />
        <splash density="port-xxxhdpi" src="res/screen/android/drawable-port-xxxhdpi-screen.png" />
-		 </platform>-->
+		 </platform>
 		 <platform name="ios" >
 		  <allow-intent href="itms:*" />
 		  <allow-intent href="itms-apps:*" />
@@ -84,7 +84,7 @@
       <!-- iPad Spotlight and Settings Icon -->
       <icon src="res/icon/ios/icon-50.png" width="50" height="50" />
       <icon src="res/icon/ios/icon-50@2x.png" width="100" height="100" />
-<!--
+
        <splash height="1136" platform="ios" src="res/screen/ios/Default-568h@2x~iphone.png" width="640" />
        <splash height="1334" platform="ios" src="res/screen/ios/Default-667h.png" width="750" />
        <splash height="2208" platform="ios" src="res/screen/ios/Default-736h.png" width="1242" />
@@ -95,9 +95,7 @@
        <splash height="1024" platform="ios" src="res/screen/ios/Default-Portrait~ipad.png" width="768" />
        <splash height="960" platform="ios" src="res/screen/ios/Default@2x~iphone.png" width="640" />
        <splash height="480" platform="ios" src="res/screen/ios/Default~iphone.png" width="320" />
-       -->
 		 </platform>
      
-     <!--<preference name="SplashScreenDelay" value="5000" />-->
-
+     <preference name="SplashScreenDelay" value="5000" />
 </widget>

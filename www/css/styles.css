@@ -1739,7 +1739,7 @@ img {max-width:100%;}
 
 .lista {
     display: flex;
-    width: 90%;
+    width: 100%;
 }
 
 .lista a {
@@ -1749,18 +1749,20 @@ img {max-width:100%;}
     padding: 20px;
     text-align:center;
     width: 45%;
-    margin: 5px 8px;
+    margin: 8px 8px;
     border-radius: 5px;
     position: relative;
 }
 
+.lista a:first-child {margin-left:0px;}
+.lista a:last-child {margin-right:0px;}
 .lista a:before {
     content:"";
     display: block;
     padding-top: 100%;
 }
 
-.lista a:hover {
+.lista a.link:hover {
     background: url("../img/ldr_bg.jpg") repeat-y left top;
  }
 
@@ -1788,10 +1790,9 @@ img {max-width:100%;}
 
     .lista a .contenuto span {
         position: absolute;
-        bottom: 10px;
+        bottom: 5px;
         left: 50%;
         transform: translateX(-50%);
-        font-size: 1.3em;
         width: 90%;
     }
 
@@ -1819,3 +1820,17 @@ img {max-width:100%;}
         font-size: smaller;
         margin-left: 0;
     }
+
+#partner .page {
+    background-color: #EEEEEE;
+}
+
+#partner .content-block {margin-top:150px;}
+#partner .content-block a {
+    background: #fff;
+    display: block;
+    padding: 6px 4px;
+    text-align: center;
+    margin: 14px 10px;
+    border-radius: 5px;
+}
