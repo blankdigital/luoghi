@@ -25,7 +25,6 @@
   	 <plugin name="cordova-plugin-statusbar"  />
   	 <plugin name="cordova-plugin-inappbrowser"  />
      <plugin name="cordova-plugin-splashscreen" />
-     <plugin name="cordova-plugin-universal-links" />
      <preference name="android-minSdkVersion" value="16" />
      <preference name="android-targetSdkVersion"  value="26" />
      <preference name="orientation" value="portrait" />
