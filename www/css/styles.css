@@ -1714,6 +1714,10 @@ img {max-width:100%;}
 #partner .toolbar,
 #partner .subnavbar {background-color: #D4706F;}
 
+#sos .navbar,
+#sos .toolbar,
+#sos .subnavbar {background-color: #25d366;}
+
 #header-home {
     width: 100vw;
     padding-bottom: 50px;
@@ -1834,3 +1838,13 @@ img {max-width:100%;}
     margin: 14px 10px;
     border-radius: 5px;
 }
+
+#sos .sos-block {margin-top:100px;}
+#sos .sos-block i,
+#sos .sos-block span {
+    display:block;
+    color: #25d366;
+    text-align:center;
+}
+#sos .sos-block i {font-size: 80vw;}
+#sos .sos-block span {font-size:20vw;}
