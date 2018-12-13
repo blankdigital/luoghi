@@ -10,15 +10,15 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
 
+    <title>I Luoghi della Rete</title>
+
     <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/styles.css">
 
-    <title>I Luoghi della Rete</title>
 </head>
 <body>
     <!-- Status bar overlay -->
     <div class="statusbar-overlay"></div>
-
     <!-- Panels overlay-->
     <div class="panel-overlay"></div>
     <!-- Left panel with reveal effect-->
@@ -37,20 +37,24 @@
     </div>
 
     <!-- Views -->
-    <div class="views pages" data-role="page" id="home">
+    <div class="views pages" data-role="page" id="articolo">
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
             <!-- Top Navbar-->
             <div class="navbar">
                 <div class="navbar-inner">
-                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
-                    <div class="centra sliding">I Luoghi della Rete</div>
+                    <div class="left fixed">
+                        <a href="consigli.html" class="back link">
+                            <i class="icon icon-back"></i>
+                        </a>
+                    </div>
+                    <div class="centra sliding">Consigli di navigazione</div>
                     <div class="right">
                         <!--
                         Right link contains only icon - additional "icon-only" class
                         Additional "open-panel" class tells app to open panel when we click on this link
 
-                        <a href="#" class="link open-panel"><i class="icon icon-bars"></i></a>-->
+                                            <a href="#" class="showMenu"><i class="icon icon-bars"></i></a>-->
                     </div>
                 </div>
             </div>
@@ -60,20 +64,42 @@
                 <div data-page="index" class="page" data-role="content">
                     <!-- Scrollable page content -->
                     <div class="page-content" id="pageContent">
-                        <div id="header-home">
-                            <img src="img/logo_ldr_bianco.png" class="centra imghome" />
-                        </div>
-                        <div class="altezza-60 sovrapposto content-block">
-                            <div class="lista centra">
-                                <a href="#" class="link tasto1" onclick="openUrl('https://www.iluoghidellarete.it/index.php/app-test', '_system', 'location=yes'); return false;"><div class="contenuto"><i class="fa fa-gamepad fa-3x fittext" aria-hidden="true"></i><span>Fai il Test!</span></div></a>
-                                <a href="progetto.html" class="link tasto2"><div class="contenuto"><i class="fa fa-globe fa-3x fittext" aria-hidden="true"></i><span>Il Progetto</span></div></a>
-                                <a href="partner.html" class="link tasto4"><div class="contenuto"><i class="fa fa-users fa-2x fittext" aria-hidden="true"></i><span>I Partner</span></div></a>
-                            </div>
-                            <div class="lista centra">
-                                <a href="consigli.html" class="link tasto6"><div class="contenuto"><i class="fa fa-info-circle fa-3x fittext" aria-hidden="true"></i><span>Consigli</span></div></a>
-                                <a href="sos.html" class="link tasto3"><div class="contenuto"><i class="fa fa-whatsapp fa-3x fittext" aria-hidden="true"></i><span>SOS</span></div></a>
-                                <a href="#" onclick="window.open('fb://page/163852021135005', '_system', 'location=yes');" class="link tasto5"><div class="contenuto"><i class="fa fa-facebook fa-2x fittext" aria-hidden="true"></i><span>Facebook</span></div></a>
-                            </div>
+                        <div class="content-block">
+                            <p><img class="centra" src="img/consigli/elefanti.jpg" alt=" "></p>
+                            <h2>5 mosse per foto perfette</h2>
+                            <p>
+                                Ah le foto, che passione!📷📷
+                                I social danno sempre maggiore spazio alle foto, e avere dei profili seguiti, attivi e accattivanti diventa sempre più divertente.
+                                Le foto oggi comunicano nel mondo reale chi siamo, ma soprattutto chi vogliamo essere. Sul web però le impressioni sulle immagini e sulle parole che si condividono hanno un rischio di interpretazione sbagliata maggiore.
+                            </p>
+                            <p>
+                                Innanzitutto perchè restano nel tempo e alla mercé degli utenti e soprattutto perchè non è possibile spiegarne il contesto, come invece accade nella realtà. Temi condivisi, stili fotografici, lessico definiscono un proprio <strong>io</strong> digitale che per forza di cose, si ripercuote con forza sull’<strong>io</strong> reale, a volte in modo negativo
+                            </p>
+                            <p>
+                                La comunicazione visiva, essendo perfettamente rispondente ai criteri di rapidità ed emozione è prioritaria nella comunicazione del nuovo millennio.
+                                Un'immagine però, contiene una serie di metacomunicazioni, a volte coscienti, a volte subliminali. Sfondi, luminosità, contesto, espressione, posa, vengono racchiusi nel giudizio complessivo dell'autore, spesso in modo incosciente.
+                            </p>
+                            <p>
+                                Ma quali sono i segreti per una buona foto? Ecco 5 mosse infallibili per selfie al top! 🚀🚀🚀
+                            </p>
+                            <ul>
+                                <li>
+                                    ️1️⃣ ️Lo sfondo. Ti ricordi l'epidemia di selfie nel bagno? Ecco, ricordati uno sfondo migliore della tua tazza di casa!🏖️🚽
+                                </li>
+                                <li>
+                                    ️2️⃣ ️Primo piano! Soggetti bui o troppo lontani, non interessano a nessuno. Punta sulla luminosità e soggetti protagonisti!💁‍♀️💁‍♀️
+                                </li>
+                                <li>
+                                    ️3️⃣ Good fit! Scegliere la foto giusta, significa che deve andar bene in ogni situazione. Perchè i social, non ti fanno scegliere il tuo pubblico, ma mostrano- A- TUTTI. Sicuro che in quella festa lì ti avrebbe visto con gioia la tua vecchia zia?🧟‍♂️🧟‍♀️
+                                </li>
+                                <li>
+                                    ️4️⃣ ️Privacy is sexy! Sì condividere, osare, giocare è divertente. Ma una volta che qualcosa è online, chissà dove può finire.
+                                    Meglio darsi arie misteriose!🕵️‍♂️🕵️‍♂️
+                                </li>
+                                <li>
+                                    ️5️⃣ ️I social non sono i tuoi confidenti. Sappi che anche le migliori azioni sono oggetto di critiche. Meglio fidarsi di pochi, buoni amici che darsi in pasto ai migliaia di followers, se non vogliamo che diventino haters.
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -91,9 +117,9 @@
     </div>
 
     <script type="text/javascript" src="cordova.js"></script>
-
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
     <!--<script type="text/javascript" src="js/app.js"></script>-->
+
     <script type="text/javascript">
         function openUrl(url) {
             window.open(url, '_blank', 'location=yes');
@@ -104,7 +130,10 @@
             ref.addEventListener('loadstop', function () { alert('stop: ' + event.url); });
             ref.addEventListener('exit', function () { alert(event.type); });
         }
-        (function () { document.addEventListener("deviceready", onDeviceReady, true); });
+        (function () {
+            document.addEventListener("deviceready", onDeviceReady, true);
+        });
     </script>
+
 </body>
 </html>

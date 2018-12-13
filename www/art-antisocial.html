@@ -10,15 +10,15 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
 
+    <title>I Luoghi della Rete</title>
+
     <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/styles.css">
 
-    <title>I Luoghi della Rete</title>
 </head>
 <body>
     <!-- Status bar overlay -->
     <div class="statusbar-overlay"></div>
-
     <!-- Panels overlay-->
     <div class="panel-overlay"></div>
     <!-- Left panel with reveal effect-->
@@ -37,20 +37,24 @@
     </div>
 
     <!-- Views -->
-    <div class="views pages" data-role="page" id="home">
+    <div class="views pages" data-role="page" id="articolo">
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
             <!-- Top Navbar-->
             <div class="navbar">
                 <div class="navbar-inner">
-                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
-                    <div class="centra sliding">I Luoghi della Rete</div>
+                    <div class="left fixed">
+                        <a href="consigli.html" class="back link">
+                            <i class="icon icon-back"></i>
+                        </a>
+                    </div>
+                    <div class="centra sliding">Consigli di navigazione</div>
                     <div class="right">
                         <!--
                         Right link contains only icon - additional "icon-only" class
                         Additional "open-panel" class tells app to open panel when we click on this link
 
-                        <a href="#" class="link open-panel"><i class="icon icon-bars"></i></a>-->
+                                            <a href="#" class="showMenu"><i class="icon icon-bars"></i></a>-->
                     </div>
                 </div>
             </div>
@@ -60,20 +64,39 @@
                 <div data-page="index" class="page" data-role="content">
                     <!-- Scrollable page content -->
                     <div class="page-content" id="pageContent">
-                        <div id="header-home">
-                            <img src="img/logo_ldr_bianco.png" class="centra imghome" />
-                        </div>
-                        <div class="altezza-60 sovrapposto content-block">
-                            <div class="lista centra">
-                                <a href="#" class="link tasto1" onclick="openUrl('https://www.iluoghidellarete.it/index.php/app-test', '_system', 'location=yes'); return false;"><div class="contenuto"><i class="fa fa-gamepad fa-3x fittext" aria-hidden="true"></i><span>Fai il Test!</span></div></a>
-                                <a href="progetto.html" class="link tasto2"><div class="contenuto"><i class="fa fa-globe fa-3x fittext" aria-hidden="true"></i><span>Il Progetto</span></div></a>
-                                <a href="partner.html" class="link tasto4"><div class="contenuto"><i class="fa fa-users fa-2x fittext" aria-hidden="true"></i><span>I Partner</span></div></a>
-                            </div>
-                            <div class="lista centra">
-                                <a href="consigli.html" class="link tasto6"><div class="contenuto"><i class="fa fa-info-circle fa-3x fittext" aria-hidden="true"></i><span>Consigli</span></div></a>
-                                <a href="sos.html" class="link tasto3"><div class="contenuto"><i class="fa fa-whatsapp fa-3x fittext" aria-hidden="true"></i><span>SOS</span></div></a>
-                                <a href="#" onclick="window.open('fb://page/163852021135005', '_system', 'location=yes');" class="link tasto5"><div class="contenuto"><i class="fa fa-facebook fa-2x fittext" aria-hidden="true"></i><span>Facebook</span></div></a>
-                            </div>
+                        <div class="content-block">
+                            <p><img class="centra" src="img/consigli/antisocial.jpg" alt=" "></p>
+                            <h2>Social o Antisocial?</h2>
+                            <p>
+                                Internet possiede caratteristiche allettanti che possono rappresentare fattori di rischio per lo sviluppo di diversi comportamenti problematici. Da un punto di vista strettamente psicologico, l’interesse maggiore riguarda i legami che si stringono nel cyberspazio.
+                                La sfida che l’era digitale propone è proprio quella di essere in grado di riconoscere i potenziali pericoli, per sapere come prevenire il rischio e creare così le condizioni per evitarlo e porvi fine.
+                            </p>
+                            <p>
+                                La tiritera più sentita dagli adulti è secondo noi, "basta stare sui social, esci con gli amici".
+                            </p>
+                            <h3>
+                                Si, ma è davvero così?
+                            </h3>
+                            <p>
+                                Noi crediamo che <i>i luoghi della rete </i> possano essere un mezzo, poi sta a noi usarli bene.
+                            </p>
+                            <p>
+                                👉 Ad esempio: noi ci siamo divertiti a creare dei network con gli amici della nostra scuola, per supportarci nelle attività scolastiche, programmare incontri ed eventi.
+                                Conosciamo anche diversi amici che lo hanno fatto con il condominio 🏚️ e con la palestra 🏋️‍♀️, insomma usare i social per programmare meglio le attività offline.
+                            </p>
+                            <h3>L'altra faccia della medaglia: i rischi</h3>
+                            <p>
+                                L’altra faccia della medaglia, invece sono i rischi a cui ci si espone quando si agisce in modo imprudente, come ad esempio l’Online grooming, lento processo interattivo attraverso il quale un cyber predatore sviluppa una relazione intima e duratura con una giovane vittima, “prendendosi cura” del suo mondo psicologico, oppure Cyberbullying, o il Gioco d’azzardo elettronico, o perfino estremi come il Cybersuicide, un suicidio progettato in Internet, attraverso siti che consigliano sulle modalità.
+                            </p>
+                            <p>
+                                Il rischio però più frequente e insidioso è la dipendenza da internet: una vera e propria dipendenza che si struttura, soprattutto, in soggetti adolescenti e non, meno maturi, con alto livello di curiosità, con bassa autostima e con difficoltà relazionali.
+                            </p>
+                            <p>
+                                Gli adolescenti tra i 13 e i 20 anni dipendenti da internet sono quelli più numerosi; ragazzi soli, con scarso rendimento a scuola che passano ore e ore su web e proiettano il loro essere in un mondo virtuale sviluppando deficit emotivi e sociali.
+                            </p>
+                            <p>
+                                Se tu, o uno dei tuoi amici, rientrate in questa definizione, ricordatevi sempre che internet è uno strumento, dobbiamo essere noi a controllarlo e non essere controllati da esso. Se vuoi parlarne con noi, usa il tasto SOS della nostra App, siamo pronti a rispondere a tutte le tue domande.
+                            </p>              
                         </div>
                     </div>
                 </div>
@@ -91,9 +114,9 @@
     </div>
 
     <script type="text/javascript" src="cordova.js"></script>
-
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
     <!--<script type="text/javascript" src="js/app.js"></script>-->
+
     <script type="text/javascript">
         function openUrl(url) {
             window.open(url, '_blank', 'location=yes');
@@ -104,7 +127,10 @@
             ref.addEventListener('loadstop', function () { alert('stop: ' + event.url); });
             ref.addEventListener('exit', function () { alert(event.type); });
         }
-        (function () { document.addEventListener("deviceready", onDeviceReady, true); });
+        (function () {
+            document.addEventListener("deviceready", onDeviceReady, true);
+        });
     </script>
+
 </body>
 </html>

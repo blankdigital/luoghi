@@ -10,15 +10,15 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
 
+    <title>I Luoghi della Rete</title>
+
     <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/styles.css">
 
-    <title>I Luoghi della Rete</title>
 </head>
 <body>
     <!-- Status bar overlay -->
     <div class="statusbar-overlay"></div>
-
     <!-- Panels overlay-->
     <div class="panel-overlay"></div>
     <!-- Left panel with reveal effect-->
@@ -37,20 +37,24 @@
     </div>
 
     <!-- Views -->
-    <div class="views pages" data-role="page" id="home">
+    <div class="views pages" data-role="page" id="articolo">
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
             <!-- Top Navbar-->
             <div class="navbar">
                 <div class="navbar-inner">
-                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
-                    <div class="centra sliding">I Luoghi della Rete</div>
+                    <div class="left fixed">
+                        <a href="consigli.html" class="back link">
+                            <i class="icon icon-back"></i>
+                        </a>
+                    </div>
+                    <div class="centra sliding">Consigli di navigazione</div>
                     <div class="right">
                         <!--
                         Right link contains only icon - additional "icon-only" class
                         Additional "open-panel" class tells app to open panel when we click on this link
 
-                        <a href="#" class="link open-panel"><i class="icon icon-bars"></i></a>-->
+                                            <a href="#" class="showMenu"><i class="icon icon-bars"></i></a>-->
                     </div>
                 </div>
             </div>
@@ -60,20 +64,37 @@
                 <div data-page="index" class="page" data-role="content">
                     <!-- Scrollable page content -->
                     <div class="page-content" id="pageContent">
-                        <div id="header-home">
-                            <img src="img/logo_ldr_bianco.png" class="centra imghome" />
-                        </div>
-                        <div class="altezza-60 sovrapposto content-block">
-                            <div class="lista centra">
-                                <a href="#" class="link tasto1" onclick="openUrl('https://www.iluoghidellarete.it/index.php/app-test', '_system', 'location=yes'); return false;"><div class="contenuto"><i class="fa fa-gamepad fa-3x fittext" aria-hidden="true"></i><span>Fai il Test!</span></div></a>
-                                <a href="progetto.html" class="link tasto2"><div class="contenuto"><i class="fa fa-globe fa-3x fittext" aria-hidden="true"></i><span>Il Progetto</span></div></a>
-                                <a href="partner.html" class="link tasto4"><div class="contenuto"><i class="fa fa-users fa-2x fittext" aria-hidden="true"></i><span>I Partner</span></div></a>
-                            </div>
-                            <div class="lista centra">
-                                <a href="consigli.html" class="link tasto6"><div class="contenuto"><i class="fa fa-info-circle fa-3x fittext" aria-hidden="true"></i><span>Consigli</span></div></a>
-                                <a href="sos.html" class="link tasto3"><div class="contenuto"><i class="fa fa-whatsapp fa-3x fittext" aria-hidden="true"></i><span>SOS</span></div></a>
-                                <a href="#" onclick="window.open('fb://page/163852021135005', '_system', 'location=yes');" class="link tasto5"><div class="contenuto"><i class="fa fa-facebook fa-2x fittext" aria-hidden="true"></i><span>Facebook</span></div></a>
-                            </div>
+                        <div class="content-block">
+                            <p><img class="centra" src="img/consigli/omg.png" alt=" "></p>
+                            <h2>Come scrivere i nostri post?</h2>
+                            <p>
+                                I codici comunicativi con l'era multimediale sono andati radicalmente modificandosi.
+                                La comunicazione è composta da linguaggi e metalinguaggi. Il linguaggio è il dato oggettivo, mentre le espressioni, la postura, il tono, la prosodìa e perfino l'aspetto e il contesto, aggiungono significati al dato espresso.
+                            </p>
+                            <p>
+                                Su Instagram le parole vengono messe leggermente in secondo piano. Poche, descrittive, evocative, d'impatto.
+                                Su Facebook, possiamo allargarci un po', raccontare perfino storie.
+                            </p>
+                            <p>Vi diamo 3 regole d'oro per un post che venga letto e piaccia alla vostra community:</p>
+                            <ul>
+                                <li>
+                                    ️1️⃣ incipit che susciti curiosità
+                                </li>
+                                <li>
+                                    ️2️⃣️ storie originali, di vita vissuta, meglio se ironiche o divertenti
+
+                                </li>
+                                <li>
+                                    ️3️⃣️ evita mattoni troppo lunghi, spazia i paragrafi ed elimina le perifrasi
+                                </li>
+                            </ul>
+                            <p>
+                                Nel web, escludendo per forza di cose attraverso lo schermo ogni traccia di metacomunicazione, si sono andate a consolidare altre prassi come le emoticon o le immagini allegate al testo.
+                                Dominare questi codici rende la comunicazione rispondente il più fedelmente possibile all'intento di partenza.
+                                Ma prima di tutto, la parte più importante resta un italiano impeccabile, che non possa prestarsi mai a interpretazioni sbagliate.
+                            </p>
+                            <p>👇 non perdetevi questo bellissimo articolo coi consigli di Umberto Eco per una buona scrittura!</p>
+                            <p><a href="https://www.linkedin.com/pulse/leco-di-umberto-uneredit%C3%A0-tratteggiata-40-punti-giuseppe-martino/?fbclid=IwAR0Xu15ayor6hwet5i2v2pG3kYyPhZbZ9mm4vC3tYq8LTt8WSfQAshtBeuE">L'Eco di Umberto: un'eredità tratteggiata in 40 punti.</a></p>
                         </div>
                     </div>
                 </div>
@@ -91,9 +112,9 @@
     </div>
 
     <script type="text/javascript" src="cordova.js"></script>
-
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
     <!--<script type="text/javascript" src="js/app.js"></script>-->
+
     <script type="text/javascript">
         function openUrl(url) {
             window.open(url, '_blank', 'location=yes');
@@ -104,7 +125,10 @@
             ref.addEventListener('loadstop', function () { alert('stop: ' + event.url); });
             ref.addEventListener('exit', function () { alert(event.type); });
         }
-        (function () { document.addEventListener("deviceready", onDeviceReady, true); });
+        (function () {
+            document.addEventListener("deviceready", onDeviceReady, true);
+        });
     </script>
+
 </body>
 </html>

@@ -1718,6 +1718,13 @@ img {max-width:100%;}
 #sos .toolbar,
 #sos .subnavbar {background-color: #25d366;}
 
+#consigli .navbar,
+#consigli .toolbar,
+#consigli .subnavbar,
+#articolo .navbar,
+#articolo .toolbar,
+#articolo .subnavbar {background-color: #d39a25;}
+
 #header-home {
     width: 100vw;
     padding-bottom: 50px;
@@ -1805,6 +1812,7 @@ img {max-width:100%;}
 .tasto3 {background-color: #25d366;}
 .tasto4 {background-color: #D4706F;}
 .tasto5 {background-color: #4267b2;}
+.tasto6 {background-color: #d39a25;}
 
 .toolbar-inner a.link {padding: 0 30px;}
 
@@ -1848,3 +1856,18 @@ img {max-width:100%;}
 }
 #sos .sos-block i {font-size: 80vw;}
 #sos .sos-block span {font-size:20vw;}
+
+#consigli .page {
+    background-color: #EEEEEE;
+}
+.consigliolista {
+    display: inline-flex;
+    background-color: #fff;
+    margin: 5px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+}
+    .consigliolista div {
+        display: table-cell;
+        padding: 10px;
+        width: 50%;
+    }

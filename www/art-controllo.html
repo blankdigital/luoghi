@@ -10,15 +10,15 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
 
+    <title>I Luoghi della Rete</title>
+
     <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/styles.css">
 
-    <title>I Luoghi della Rete</title>
 </head>
 <body>
     <!-- Status bar overlay -->
     <div class="statusbar-overlay"></div>
-
     <!-- Panels overlay-->
     <div class="panel-overlay"></div>
     <!-- Left panel with reveal effect-->
@@ -37,20 +37,24 @@
     </div>
 
     <!-- Views -->
-    <div class="views pages" data-role="page" id="home">
+    <div class="views pages" data-role="page" id="articolo">
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
             <!-- Top Navbar-->
             <div class="navbar">
                 <div class="navbar-inner">
-                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
-                    <div class="centra sliding">I Luoghi della Rete</div>
+                    <div class="left fixed">
+                        <a href="consigli.html" class="back link">
+                            <i class="icon icon-back"></i>
+                        </a>
+                    </div>
+                    <div class="centra sliding">Consigli di navigazione</div>
                     <div class="right">
                         <!--
                         Right link contains only icon - additional "icon-only" class
                         Additional "open-panel" class tells app to open panel when we click on this link
 
-                        <a href="#" class="link open-panel"><i class="icon icon-bars"></i></a>-->
+                                            <a href="#" class="showMenu"><i class="icon icon-bars"></i></a>-->
                     </div>
                 </div>
             </div>
@@ -60,20 +64,35 @@
                 <div data-page="index" class="page" data-role="content">
                     <!-- Scrollable page content -->
                     <div class="page-content" id="pageContent">
-                        <div id="header-home">
-                            <img src="img/logo_ldr_bianco.png" class="centra imghome" />
-                        </div>
-                        <div class="altezza-60 sovrapposto content-block">
-                            <div class="lista centra">
-                                <a href="#" class="link tasto1" onclick="openUrl('https://www.iluoghidellarete.it/index.php/app-test', '_system', 'location=yes'); return false;"><div class="contenuto"><i class="fa fa-gamepad fa-3x fittext" aria-hidden="true"></i><span>Fai il Test!</span></div></a>
-                                <a href="progetto.html" class="link tasto2"><div class="contenuto"><i class="fa fa-globe fa-3x fittext" aria-hidden="true"></i><span>Il Progetto</span></div></a>
-                                <a href="partner.html" class="link tasto4"><div class="contenuto"><i class="fa fa-users fa-2x fittext" aria-hidden="true"></i><span>I Partner</span></div></a>
-                            </div>
-                            <div class="lista centra">
-                                <a href="consigli.html" class="link tasto6"><div class="contenuto"><i class="fa fa-info-circle fa-3x fittext" aria-hidden="true"></i><span>Consigli</span></div></a>
-                                <a href="sos.html" class="link tasto3"><div class="contenuto"><i class="fa fa-whatsapp fa-3x fittext" aria-hidden="true"></i><span>SOS</span></div></a>
-                                <a href="#" onclick="window.open('fb://page/163852021135005', '_system', 'location=yes');" class="link tasto5"><div class="contenuto"><i class="fa fa-facebook fa-2x fittext" aria-hidden="true"></i><span>Facebook</span></div></a>
-                            </div>
+                        <div class="content-block">
+                            <p><img class="centra" src="img/consigli/sexy.jpg" alt=" "></p>
+                            <h2>Abbiamo davvero il controllo sui nostri contenuti?</h2>
+                            <p>
+                                Le foto sexy, c'è poco da fare, attirano like. 🧜‍♀️🧜‍♂️
+                            </p>
+                            <p>
+                                E poi diciamolo, è divertente e intrigante mostrarsi un po' in modo audace, rispetto magari ai maglioni spessi indossati a scuola.
+                                Ma lo sapete che una foto messa in rete diventa praticamente impossibile da tracciare?
+                            </p>
+                            <p>
+                                La condivisioni di contenuti, soprattutto sui social, sono quanto di più sfuggente al controllo
+                                possa esistere.
+                                Condividere un file su facebook, o in un gruppo whatsapp o anche solo ad un amico, significa immetterlo in uno stream in cui, secondo il criterio dei sette gradi di separazione, può potenzialmente estendersi a tutto il mondo.
+                            </p>
+                            <p>
+                                I casi di viralità che hanno portato drammatiche conseguenze nei protagonisti, ne sono un triste esempio.
+                                Quando un dato, un'informazione entra nel web, tranne in alcuni casi particolarmente blindati (tipo banche, sistemi di sicurezza), se ne perde il controllo.
+                            </p>
+                            <p>
+                                Il dedalo di condivisioni, visualizzazioni, download che segue dal momento dell'immissione è INCONTROLLABILE. Questo implica, necessariamente, che quando qualcosa entra nel web difficilmente lo si riuscirà a eliminare al 100%.
+                            </p>
+                            <h3>Soluzioni?</h3>
+                            <p>
+                                In Italia la legge prevede il “diritto all'oblio” che è una procedura per epurare il web che ha violato la privacy e la serenità di qualcuno ma è praticamente impossibile da applicare in modo efficace in modo assoluto.
+                            </p>
+                            <p>
+                                Meglio mettere la nostra maglietta preferita per far colpo all'aperitivo con quello carino lì, che proprio ieri ci ha sorriso! 😍😍 (e non lasciare tracce perenni in giro!)
+                            </p>              
                         </div>
                     </div>
                 </div>
@@ -91,9 +110,9 @@
     </div>
 
     <script type="text/javascript" src="cordova.js"></script>
-
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
     <!--<script type="text/javascript" src="js/app.js"></script>-->
+
     <script type="text/javascript">
         function openUrl(url) {
             window.open(url, '_blank', 'location=yes');
@@ -104,7 +123,10 @@
             ref.addEventListener('loadstop', function () { alert('stop: ' + event.url); });
             ref.addEventListener('exit', function () { alert(event.type); });
         }
-        (function () { document.addEventListener("deviceready", onDeviceReady, true); });
+        (function () {
+            document.addEventListener("deviceready", onDeviceReady, true);
+        });
     </script>
+
 </body>
 </html>
