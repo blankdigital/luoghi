@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="it.iluoghidellarete.app" version="1.0.7" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="it.iluoghidellarete.app" version="1.0.8" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>I Luoghi della Rete</name>
     <description>
         Il mio modo di essere connesso.
@@ -26,7 +26,7 @@
   	 <plugin name="cordova-plugin-inappbrowser"  />
      <plugin name="cordova-plugin-splashscreen" />
      <preference name="android-minSdkVersion" value="16" />
-     <preference name="android-targetSdkVersion"  value="26" />
+     <preference name="android-targetSdkVersion"  value="28" />
      <preference name="orientation" value="portrait" />
      <preference name="phonegap-version" value="cli-7.1.0" />
 

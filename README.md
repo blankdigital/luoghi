@@ -1,4 +1,4 @@
-# A Blank PhoneGap App
+# A _blank PhoneGap App
 
 ## Usage
 
